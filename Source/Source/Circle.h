@@ -6,23 +6,25 @@ using namespace std;
 class circle {
 private:
 	double radius;
-	double x;
-	double y;
-	string s;
+	double xCord;
+	double yCord;
+	string sName;
 
 public:
-	circle(double x, double y, double r) {
+	circle(double r, double x, double y, string s) {
 
-		x = x;
-		y = y;
-		r = radius;
-
+		radius = r;
+		xCord = x;
+		yCord = y;
+		sName = s;		 	  
 	}
 
 	circle() {
-		radius = 3;
-		x = 5;
-		y = 7;
+		radius = 1;
+		xCord = 1;
+		yCord = 1;
+		sName = "TempCircle";
+	
 	}
 
 	void setRadius(double r) {
@@ -30,15 +32,15 @@ public:
 	}
 
 	void setXcord(double x) {
-		x = x;
+		xCord = x;
 	}
 
 	void setYcord(double y) {
-		y = y;
+		yCord = y;
 	}
 
 	void setCircleName(string s) {
-		s = s;
+		sName = s;
 	}
 
 	double getRadius() {
@@ -46,15 +48,15 @@ public:
 	}
 
 	double getXcord() {
-		return x;
+		return xCord;
 	}
 
 	double getYcord() {
-		return y;
+		return yCord;
 	}
 
 	string getCircleName() {
-		return s;
+		return sName;
 	}
 
 	void print();

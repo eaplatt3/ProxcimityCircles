@@ -5,10 +5,10 @@ using namespace std;
 
 
 void circle::print() {
-	cout << s << " Circle" << endl;
+	cout << sName << " Circle" << endl;
 	cout << "Radius is: " << radius << endl;
-	cout << "Middle X-coordinate is: " << x << endl;
-	cout << "Middle Y-coordinate is: " << y << endl;
+	cout << "Middle X-coordinate is: " << xCord << endl;
+	cout << "Middle Y-coordinate is: " << yCord << endl;
 	cout << " " << endl;
 
 

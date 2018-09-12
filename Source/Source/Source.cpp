@@ -21,8 +21,7 @@ int main()
 	circle c1, c2;
 
 
-	s = "first";
-	c1.setCircleName(s);
+	c1.setCircleName("first");
 	
 
 	cout << "Please Enter the Radius of the First Circle: ";
@@ -58,6 +57,8 @@ int main()
 	c1.print();
 	cout << " " << endl;
 	c2.print();
+
+	system("pause");
 
 	return 0;
 
