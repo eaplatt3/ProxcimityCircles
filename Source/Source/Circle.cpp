@@ -23,7 +23,7 @@ double circle::prox(double x, double y, double x1, double y1, double r, double r
 
 	distance = sqrt((pow(x - x1, 2))+ (pow(y - y1, 2)));
 
-	//Checks the Soulatioon to Above ^
+	//Checks the Solution to Equation Above ^
 	//To Determine if the Circles
 	//Are Touching, Overlapping, or Apart
 	//Displays what is Determined on the Console Screen 
