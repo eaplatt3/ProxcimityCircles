@@ -1,14 +1,15 @@
 //Earl Platt III
-//Data Structures - BCS
+//Data Structures - BCS 370
 //9/11/2018
-//First Program: Determin if 2 Circles are Touching Or Not
+//First Problem: Determine if 2 Circles are Touching Or Not
 
-//Inuput: Prompt User for Radius, X-coordnate, & Y-Coordinate
-//Output: Display if the circles are touching, overlaping, or not touching
+//Input: Prompt User for Radius, X-coordnate, & Y-Coordinate
+//Output: Display if the Circles are Touching, Overlaping, or Apart
 
 #include <iostream>
 #include <string>
 #include "Circle.h"
+
 using namespace std;
 
 int main()
@@ -21,7 +22,7 @@ int main()
 	circle c1, c2;
 
 
-	c1.setCircleName("first");
+	c1.setCircleName("First");
 	c2.setCircleName("Second");
 	
 
@@ -56,12 +57,13 @@ int main()
 	c2.setYcord(y);
 	cout << " " << endl;
 
-	c1.prox(c1.getXcord(), c1.getYcord(), c2.getXcord(), c2.getYcord(), c1.getRadius(), c2.getRadius());
-	
-	
 	c1.print();
 	cout << " " << endl;
+
 	c2.print();
+	cout << " " << endl;
+
+	c1.prox(c1.getXcord(), c1.getYcord(), c2.getXcord(), c2.getYcord(), c1.getRadius(), c2.getRadius());
 
 
 	system("pause");

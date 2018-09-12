@@ -1,3 +1,5 @@
+//Circle Class 
+
 #pragma once
 #pragma once
 #include <string>
@@ -11,6 +13,7 @@ private:
 	string sName;
 
 public:
+	//Constructor
 	circle(double r, double x, double y, string s) {
 
 		radius = r;
@@ -19,6 +22,7 @@ public:
 		sName = s;
 	}
 
+	//Constructor
 	circle() {
 		radius = 1;
 		xCord = 1;
@@ -27,6 +31,7 @@ public:
 
 	}
 
+	//Mutators 
 	void setRadius(double r) {
 		radius = r;
 	}
@@ -59,6 +64,7 @@ public:
 		return sName;
 	}
 
+	//Methods
 	void print();
 	double prox(double x, double y, double x1, double x2, double r, double r1);
 };
