@@ -22,6 +22,7 @@ int main()
 
 
 	c1.setCircleName("first");
+	c2.setCircleName("Second");
 	
 
 	cout << "Please Enter the Radius of the First Circle: ";
@@ -39,6 +40,7 @@ int main()
 	c1.setYcord(y);
 	cout << " " << endl;
 
+	
 	cout << "Please Enter the Radius of the Second Circle: ";
 	cin >> r;
 	c2.setRadius(r);
@@ -54,9 +56,13 @@ int main()
 	c2.setYcord(y);
 	cout << " " << endl;
 
+	c1.prox(c1.getXcord(), c1.getYcord(), c2.getXcord(), c2.getYcord(), c1.getRadius(), c2.getRadius());
+	
+	
 	c1.print();
 	cout << " " << endl;
 	c2.print();
+
 
 	system("pause");
 

@@ -16,7 +16,7 @@ public:
 		radius = r;
 		xCord = x;
 		yCord = y;
-		sName = s;		 	  
+		sName = s;
 	}
 
 	circle() {
@@ -24,7 +24,7 @@ public:
 		xCord = 1;
 		yCord = 1;
 		sName = "TempCircle";
-	
+
 	}
 
 	void setRadius(double r) {
@@ -60,5 +60,5 @@ public:
 	}
 
 	void print();
-	//void prox();
+	double prox(double x, double y, double x1, double x2, double r, double r1);
 };
