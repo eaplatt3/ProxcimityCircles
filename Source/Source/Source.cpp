@@ -43,6 +43,8 @@ int main()
 		cin.clear();
 		cin.ignore(256, '\n');
 		cin >> r;
+		c1.setRadius(r);
+		cout << " " << endl;
 	}
 
 	cout << "Please Enter the Middle X-coordinate of the First Circle: ";
@@ -57,6 +59,8 @@ int main()
 		cin.clear();
 		cin.ignore(256, '\n');
 		cin >> x;
+		c1.setXcord(x);
+		cout << " " << endl;
 	}
 
 	cout << "Please Enter the Middle Y-coordinate of the First Circle: ";
@@ -71,6 +75,8 @@ int main()
 		cin.clear();
 		cin.ignore(256, '\n');
 		cin >> y;
+		c1.setYcord(y);
+		cout << " " << endl;
 	}
 
 	cout << "Please Enter the Radius of the Second Circle: ";
@@ -85,6 +91,8 @@ int main()
 		cin.clear();
 		cin.ignore(256, '\n');
 		cin >> r;
+		c2.setRadius(r);
+		cout << " " << endl;
 	}
 
 	cout << "Please Enter the Middle X-coordinate of the Second Circle: ";
@@ -99,6 +107,8 @@ int main()
 		cin.clear();
 		cin.ignore(256, '\n');
 		cin >> x;
+		c2.setXcord(x);
+		cout << " " << endl;
 	}
 
 	//Last Section to Request User Input
@@ -114,6 +124,8 @@ int main()
 		cin.clear();
 		cin.ignore(256, '\n');
 		cin >> y;
+		c2.setYcord(y);
+		cout << " " << endl;
 	}
 
 	//Displays Users Input for First Circle
