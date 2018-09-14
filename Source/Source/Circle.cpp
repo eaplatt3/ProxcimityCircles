@@ -14,32 +14,32 @@ void circle::print() {
 }
 
 //Function to Determine the Distance of the Two Circles
-double circle::prox(double x, double y, double x1, double y1, double r, double r1) {
+double circle::prox(double x1, double y1, double x2, double y2, double r1, double r2) {
 
 	double distance;
 
 	//Takes User Input 
 	//Preforms the Arithmetic to Find the Distance Between the Two Circles 
-
-	distance = sqrt((pow(x - x1, 2))+ (pow(y - y1, 2)));
+	distance = sqrt((pow(x1 - x2, 2)) + (pow(y1 - y2, 2)));
 
 	//Checks the Solution to Equation Above ^
 	//To Determine if the Circles
 	//Are Touching, Overlapping, or Apart
 	//Displays what is Determined on the Console Screen 
-
-	if (distance == (r + r1)) {
+	if (distance == (r1 + r2)) {
+		cout << "The Distance Between the Two Circle is: " << distance << endl;
 		cout << "Circles Are Touching" << endl;
 	}
 
-	if (distance < (r + r1)) {
+	if (distance < (r1 + r2)) {
+		cout << "The Distance Between the Two Circle is: " << distance << endl;
 		cout << "Circles Are Overlapping" << endl;
 	}
 
-	else
+	else {
+		cout << "The Distance Between the Two Circle is: " << distance << endl;
 		cout << "Circles Are Apart" << endl;
-
-	cout << " " << endl;
+	}
 
 	return distance;
 
